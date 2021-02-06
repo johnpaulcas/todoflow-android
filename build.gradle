@@ -20,6 +20,9 @@ buildscript {
         // dependency injector
         hiltAndroidXVersion = "1.0.0-alpha02"
 
+        // recyclerview
+        recyclerViewVersion = "1.1.0"
+
         // logging
         timberVersion = "4.7.1"
 
