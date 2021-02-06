@@ -17,13 +17,13 @@ interface TodoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateOrInsert(todo: Todo)
 
-    @Query("SELECT * FROM todo_table WHERE id=:id")
-    suspend fun getTodo(id: Long): Flow<Todo>
-
-    @Query("SELECT * FROM todo_table")
-    suspend fun getAllTodos(): Flow<List<Todo>>
-
     @Query("DELETE FROM todo_table")
     suspend fun deleteAll()
+
+    @Query("SELECT * FROM todo_table WHERE id=:id")
+    fun getTodo(id: Long): Flow<Todo>
+
+    @Query("SELECT * FROM todo_table")
+    fun getAllTodos(): Flow<List<Todo>>
 
 }
