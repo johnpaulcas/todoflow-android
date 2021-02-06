@@ -5,7 +5,9 @@ import android.view.View
 import com.learn.todoflow.R
 import com.learn.todoflow.base.BaseActivity
 import com.learn.todoflow.databinding.ActivityTodoBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TodoActivity : BaseActivity() {
 
     lateinit var todoViewBinding: ActivityTodoBinding
