@@ -6,8 +6,8 @@ buildscript {
         targetSdkVersion = 30
 
         // core
-        kotlinVersion = "1.4.21"
-        buildGradleVersion = "4.1.1"
+        kotlinVersion = "1.4.30"
+        buildGradleVersion = '4.1.2'
         navigationVersion = "2.3.1"
         hiltVersion = "2.28.3-alpha"
 
